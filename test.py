@@ -39,11 +39,11 @@ if len(facerect) > 0:
     #検出した顔を囲む矩形の作成
     for rect in facerect:
         #cv2.rectangle(image, tuple(rect[0:2]),tuple(rect[0:2]+rect[2:4]), color, thickness=2)
-       x = rect[0]
-       y = rect[1]
-       w = rect[2]
-       h = rect[3]
-	   image = image[rect]
-	   cv2.SaveImage("trim.jpg",image)
+        x = rect[0]
+        y = rect[1]
+        w = rect[2]
+        h = rect[3]
+        image = image[rect]
+        cv2.SaveImage("trim.jpg",image)
     #認識結果の保存
     #cv2.imwrite("detected.jpg", image)
