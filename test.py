@@ -44,6 +44,6 @@ if len(facerect) > 0:
         w = rect[2]
         h = rect[3]
         image = image[rect]
-        cv2.SaveImage("trim.jpg",image)
+        cv2.imwrite("trim.jpg",image)
     #認識結果の保存
     #cv2.imwrite("detected.jpg", image)
