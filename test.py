@@ -43,7 +43,7 @@ if len(facerect) > 0:
         y = rect[1]
         w = rect[2]
         h = rect[3]
-        image = image[rect]
+        image = image[y:y+h, x:x+w]
         cv2.imwrite("trim.jpg",image)
     #認識結果の保存
     #cv2.imwrite("detected.jpg", image)
