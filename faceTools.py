@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import cv2
+import numpy as np
 
 #HAAR分類器の顔検出用の特徴量
 #cascade_path = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml"
@@ -39,3 +40,21 @@ def face_detect(f):
             image = image[y:y+h, x:x+w]
             #cv2.imwrite("trim.jpg",image)
     return image
+
+def equalize(f):
+    image_path = f
+    #ファイル読み込み
+    image = cv2.imread(image_path)
+    b,g,r = cv2.split(image)
+    b2 = cv2.equalizeHist(b)
+    g2 = cv2.equalizeHist(g)
+    r2 = cv2.equalizeHist(r)
+    im = cv2.merge([b2,g2,r2])
+    return im
+
+def reverseLR(f):
+    image_path = f
+    #ファイル読み込み
+    image = cv2.imread(image_path)
+    im = cv2.flip(image,1)
+    return im

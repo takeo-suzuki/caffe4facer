@@ -19,5 +19,22 @@ for line in lines:
     print fileNameExt
     print fileTag
     
-    image = faceTools.face_detect(fileName)
-    cv2.imwrite(fileNameNoExt + "_f." + fileNameExt,image)
+    # trinmming face
+    fileName_f = fileNameNoExt + "_f." + fileNameExt
+    image_f = faceTools.face_detect(fileName)
+    cv2.imwrite(fileName_f,image_f)
+    
+    # histgram equalize
+    fileName_e = fileNameNoExt + "_e." + fileNameExt
+    image_e = faceTools.equalize(fileName)
+    cv2.imwrite(fileName_e,image_e)
+    
+    # histgram equalize
+    fileName_fe = fileNameNoExt + "_fe." + fileNameExt
+    image_fe = faceTools.equalize(fileName_f)
+    cv2.imwrite(fileName_fe,image_fe)
+    
+    # reverseLR
+    fileName_r = fileNameNoExt + "_r." + fileNameExt
+    image_r = faceTools.reverseLR(fileName)
+    cv2.imwrite(fileName_r,image_r)
