@@ -1,3 +1,1 @@
-a.jpg aaa
-b.jpg bbb
-c.jpg ccc
+lena.jpg lena
