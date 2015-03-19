@@ -11,8 +11,8 @@ f.close()
 for line in lines:
     fileName = line.split()[0]
     fileTag = line.split()[1]
-    fileNameNoExt = fileName.split(".")[0] + "_"
-    fileNameExt = "." + fileName.split(".")[1]
+    fileNameNoExt = fileName.split('.')[0]
+    fileNameExt = '.' + fileName.split('.')[1]
     print fileName
     print fileTag
     print fileNameNoExt
@@ -20,21 +20,80 @@ for line in lines:
 
     imageFiles = [fileNameNoExt]
     # trinmming face
-    fileName_f = fileNameNoExt + "f" + fileNameExt
+    fileName_f = fileNameNoExt + '_f'
     image_f = faceTools.face_detect(fileName)
-    cv2.imwrite(fileName_f,image_f)
+    cv2.imwrite(fileName_f + fileNameExt,image_f)
     imageFiles.append(fileName_f)
     
     # histgram equalize
     for fn in list(imageFiles):
-        fileName_e = fn + "e" + fileNameExt
-        image_e = faceTools.equalize(fn)
-        cv2.imwrite(fileName_e,image_e)
+        fileName_e = fn + '_e'
+        image_e = faceTools.equalize(fn + fileNameExt)
+        cv2.imwrite(fileName_e + fileNameExt,image_e)
         imageFiles.append(fileName_e)
     
     # reverseLR
     for fn in list(imageFiles):
-        fileName_r = fn + "r" + fileNameExt
-        image_r = faceTools.reverseLR(fileName)
-        cv2.imwrite(fileName_r,image_r)
+        fileName_r = fn + '_r'
+        image_r = faceTools.reverseLR(fn + fileNameExt)
+        cv2.imwrite(fileName_r + fileNameExt,image_r)
         imageFiles.append(fileName_r)
+    
+    # resizeHalf
+    resizeList = []
+    for fn in list(imageFiles):
+        fileName_s = fn + '_s'
+        image_s = faceTools.resizeHalf(fn + fileNameExt)
+        cv2.imwrite(fileName_s + fileNameExt,image_s)
+        resizeList.append(fileName_s)
+
+    # resizeQuarter
+    for fn in list(imageFiles):
+        fileName_ss = fn + '_ss'
+        image_ss = faceTools.resizeQuarter(fn + fileNameExt)
+        cv2.imwrite(fileName_ss + fileNameExt,image_ss)
+        resizeList.append(fileName_ss)
+
+    # resizeEighth
+    for fn in list(imageFiles):
+        fileName_xs = fn + '_xs'
+        image_xs = faceTools.resizeEighth(fn + fileNameExt)
+        cv2.imwrite(fileName_xs + fileNameExt,image_xs)
+        resizeList.append(fileName_xs)
+
+    imageFiles.extend(resizeList)
+    
+    # gray scale
+    for fn in list(imageFiles):
+        fileName_g = fn + '_g'
+        image_g = faceTools.gray(fn + fileNameExt)
+        cv2.imwrite(fileName_g + fileNameExt,image_g)
+        imageFiles.append(fileName_g)
+    
+    # blurS
+    blurList = []
+    for fn in list(imageFiles):
+        fileName_bs = fn + '_bs'
+        image_bs = faceTools.blurS(fn + fileNameExt)
+        cv2.imwrite(fileName_bs + fileNameExt,image_bs)
+        blurList.append(fileName_bs)
+
+    # blurM
+    for fn in list(imageFiles):
+        fileName_bm = fn + '_bm'
+        image_bm = faceTools.blurM(fn + fileNameExt)
+        cv2.imwrite(fileName_bm + fileNameExt,image_bm)
+        blurList.append(fileName_bm)
+
+    # blurL
+    for fn in list(imageFiles):
+        fileName_bl = fn + '_bl'
+        image_bl = faceTools.blurL(fn + fileNameExt)
+        cv2.imwrite(fileName_bl + fileNameExt,image_bl)
+        blurList.append(fileName_bl)
+
+    imageFiles.extend(blurList)
+
+    wf = open('train_files.txt','a')
+    for fn in list(imageFiles):
+        wf.write(fn + fileNameExt + ' ' + fileTag + '\n')

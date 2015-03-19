@@ -71,9 +71,9 @@ def resizeEighth(f):
 def resize(f,scale):
     image_path = f
     image = cv2.imread(image_path)
-    hight = im.shape[0]
-    width = im.shape[1]
-    im = cv2.resize(image,(hight*scale,width*scale))
+    hight = image.shape[0]
+    width = image.shape[1]
+    im = cv2.resize(image,(int(width*scale),int(hight*scale)))
     return im
 
 def gray(f):
@@ -88,7 +88,7 @@ def blurM(f):
     return blur(f,5)
 
 def blurL(f):
-    return blur(f,8)
+    return blur(f,7)
 
 def blur(f,size):
     image_path = f
