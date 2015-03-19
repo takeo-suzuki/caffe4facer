@@ -58,3 +58,40 @@ def reverseLR(f):
     image = cv2.imread(image_path)
     im = cv2.flip(image,1)
     return im
+
+def resizeHalf(f):
+    return resize(f,0.5)
+
+def resizeQuarter(f):
+    return resize(f,0.25)
+
+def resizeEighth(f):
+    return resize(f,0.125)
+
+def resize(f,scale):
+    image_path = f
+    image = cv2.imread(image_path)
+    hight = im.shape[0]
+    width = im.shape[1]
+    im = cv2.resize(image,(hight*scale,width*scale))
+    return im
+
+def gray(f):
+    image_path = f
+    image = cv2.imread(image_path,0)
+    return image
+
+def blurS(f):
+    return blur(f,3)
+
+def blurM(f):
+    return blur(f,5)
+
+def blurL(f):
+    return blur(f,8)
+
+def blur(f,size):
+    image_path = f
+    image = cv2.imread(image_path)
+    im = cv2.GaussianBlur(image,(size,size),0)
+    return im
