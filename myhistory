@@ -1,0 +1,423 @@
+sudo apt-get update
+sudo apt-get upgrade
+chmod +x NVIDIA-Linux-x86_64-346.47.run 
+sudo /etc/init.d/mdm stop
+sudo apt-get install git
+sudo apt-get install build-essential
+vi opencv.sh 
+cat --help
+cat --help | less
+cat -A opencv.sh 
+chmod +x opencv.sh 
+./opencv.sh 
+sh
+vim opencv.sh 
+sudo apt-get install vim
+vim opencv.sh 
+./opencv.sh 
+vim opencv.sh 
+cd ../
+cd ../
+./work/caffe4facer/opencv.sh 
+ll
+cd opencv_dir/
+ll
+cd opencv-2.4.10/
+ll
+cd build/
+ll
+vi ../../../work/caffe4facer/opencv.sh 
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
+make
+sudo make install
+vi /etc/ld.so.conf.d/opencv.conf
+sudo vi /etc/ld.so.conf.d/opencv.conf
+sudo ldconfig
+sudo vi /etc/bash.bashrc 
+cd ../
+ll
+cd samples/
+ll
+cd c
+ll
+./build_all.sh 
+./facedetect --cascade="/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml" --scale=1.5 lena.jpg
+cd ~
+ll
+cd caffe/
+ll
+cp Makefile.config.example Makefile.config
+vi Makefile.config
+make all
+sudo apt-get install gflags
+sudo apt-get install libgflags-dev
+make all
+sudo apt-get install liblogging-dev
+sudo apt-get install liblogging
+sudo apt-get install glog-dev
+sudo apt-get install glog
+sudo apt-get install libglog
+sudo apt-get install libglog-dev
+sudo apt-get install libgoogle-glog-dev
+make all
+sudo apt-get install liblmdb-dev
+sudo apt-get install protobuf-compiler
+make all
+make test
+make runtest
+where vi
+easy_install
+sudo apt-get install pip
+pip
+sudo apt-get install python-pip
+easy_install
+sudo apt-get install python-setuptools
+sudo easy_install -U pip
+ll
+cd python/
+ll
+for req in $(cat requ
+
+;
+
+q
+for req in $(cat requirements.txt); do sudo pip install $req; done
+make pycaffe
+ll
+cd caffe/
+ll
+cd ../
+cd ../
+ll
+make pycaffe
+cd ~
+vi ~/.bashrc
+source ~/.bashrc 
+set
+python
+vi .bashrc 
+source ~/.bashrc 
+python
+sudo pip scikit-image
+sudo pip install scikit-image
+sudo pip install scipy
+sudo apt-get numpy
+sudo apt-get install numpy
+numpy
+easy_install numpy
+easy_install scipy
+sudo pip install numpy
+sudo pip install scipy
+sudo apt-get install fortran
+sudo apt search fortran
+sudo apt-get install gfortran
+sudo pip install scipy
+sudo pip install scikit-image
+python
+printenv | grep PYTHON
+export PYTHONPATH=~/caffe/python/caffe
+printenv | grep PYTHON
+cd caffe/python/
+ll
+cd ../
+ll
+make all
+make clean
+make all
+make test
+make runtest
+ll
+cd python/
+ll
+for req in $(cat requirements.txt); do sudo pip install $req; done
+make pycaffe
+cd ../
+make pycaffe
+python
+printenv | grep PYTHON
+export PYTHONPATH=~/caffe/python:$PYTHONPATH
+printenv | grep PYTHON
+python
+cd python/
+cd caffe/
+ll
+python
+ll
+exit
+ll
+cd work/
+ll
+cd caffe4facer/
+ll
+vi caffe.sh
+cd ../
+ll
+cd ../
+ll
+git clone https://github.com/BVLC/caffe.git
+ll
+cd caffw
+cd caffe
+ll
+ll
+ll
+cd ../
+ll
+cd work
+ll
+cd caffe4facer/
+ll
+cat caffe.sh 
+chmod +x caffe.sh 
+ll
+./caffe.sh 
+ci caffe.sh 
+vi caffe.sh 
+vi caffe.sh ]
+vi caffe.sh
+exit
+ll
+w
+./NVIDIA-Linux-x86_64-346.47.run 
+sudo ./NVIDIA-Linux-x86_64-346.47.run 
+sudo /etc/init.d/mdm start
+cd work/
+cd caffe4facer/
+git commit -a
+git push
+exit
+printenv
+printenv | grep PYTHON
+export PYTHONPATH=~/caffe/python/
+python
+ll
+cd work/
+ll
+cd caffe4facer/
+git pull
+ll
+vi file.py 
+chmod + x file.py 
+chmod +x file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+git add .
+git add -A
+git commit -a
+git config --global user.email "takeo_suzuki@kronos-jp.net"
+git commit -a
+git push
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+git commit -a
+git push
+git pull
+ll
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+git commit -a
+git push
+git pull
+git pull
+ll
+cd git
+cd .git
+ll
+rm index.lock 
+cd ../
+git pull
+ll
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+./file.py 
+git commit -a
+git push
+ll
+cd .git/
+ll
+cd ../
+./file.py 
+./file.py 
+ll ../../caffe/build/tools/
+cd ../../caffe/build/tools/
+ll
+cd ../../../
+cd work/
+cd caffe4facer/
+../../caffe/build/tools/convert_imageset ~/work/caffe4facer/training_dataset/ ~/work/caffe4facer/training_dataset/train_files.txt training_leveldb 1 -backend leveldb 28 28
+ll
+cd training_leveldb/
+ll
+cd ../
+../../caffe/build/tools/convert_imageset ~/work/caffe4facer/test_dataset/ ~/work/caffe4facer/test_dataset/test_files.txt test_leveldb 1 -backend leveldb 28 28
+cd ~
+find -name prototxt .
+find ./ -name prototxt
+find . -name prototxt
+find . -name file
+find ./ -name solver.prototxt
+cp ./caffe/models/finetune_flickr_style/solver.prototxt ./
+cp ./caffe/models/finetune_flickr_style/train_val.prototxt ./
+cp ./caffe/models/finetune_flickr_style/deploy.prototxt 
+cp ./caffe/models/finetune_flickr_style/deploy.prototxt ./
+ll
+cp *.prototxt ./work/caffe4facer/
+cd work/caffe4facer/
+ll
+find ~/ -name solver.prototxt
+cp ~/caffe/examples/hdf5_classification/solver.prototxt ./
+cp ~/caffe/examples/hdf5_classification/train_val.prototxt 
+cp ~/caffe/examples/hdf5_classification/
+find ~/ -name deploy.prototxt
+~/caffe/build/tools/caffe train -solver solver.prototxt 
+~/caffe/build/tools/caffe train -solver solver.prototxt 
+~/caffe/build/tools/caffe train -solver solver.prototxt 
+~/caffe/build/tools/caffe train -solver solver.prototxt 
+cd ~/caffe/
+ll
+cd scripts/
+ll
+cd ../
+cd examples/
+ll
+cd mnist/
+ll
+cd ../../data/mnist/
+ll
+./get_mnist.sh 
+cd ../../
+./data/mnist/get_mnist.sh 
+./examples/mnist/create_mnist.sh 
+cd ~/work/caffe4facer/
+ll
+../../caffe/build/tools/convert_imageset ~/work/caffe4facer/test_dataset/ ~/work/caffe4facer/test_dataset/test_files.txt test_leveldb 1  28 28
+../../caffe/build/tools/convert_imageset ~/work/caffe4facer/training_dataset/ ~/work/caffe4facer/training_dataset/train_files.txt train_lmdb 1 28 28
+~/caffe/build/tools/caffe train -solver ./caffe4facer_solver.prototxt 
+cd ~/caffe/
+build/tools/caffe train -solver ../work/caffe4facer/caffe4facer_solver.prototxt 
+cd examples/mnist/
+./create_mnist.sh 
+ll
+./train_lenet.sh 
+cd ../../
+examples/mnist/train_lenet.sh 
+examples/mnist/train_lenet.sh 
+./build/tools/convert_imageset data/caffe4facer/training_dataset/ data/caffe4facer/training_dataset/train_files.txt  data/caffe4facer/train_lmdb 1
+./build/tools/convert_imageset data/caffe4facer/training_dataset/ data/caffe4facer/training_dataset/train_files.txt  data/caffe4facer/train_lmdb 1
+./build/tools/convert_imageset data/caffe4facer/training_dataset/ data/caffe4facer/training_dataset/train_files.txt  data/caffe4facer/train_lmdb 1
+./build/tools/convert_imageset data/caffe4facer/training_dataset/ data/caffe4facer/training_dataset/train_files.txt  data/caffe4facer/train_lmdb 1
+./build/tools/convert_imageset data/caffe4facer/test_dataset/ data/caffe4facer/test_dataset/test_files.txt data/caffe4facer/test_lmdb 1
+./build/tools/convert_imageset data/caffe4facer/training_dataset/ data/caffe4facer/training_dataset/train_files.txt  data/caffe4facer/train_lmdb 1 500 500
+./build/tools/convert_imageset data/caffe4facer/test_dataset/ data/caffe4facer/test_dataset/test_files.txt data/caffe4facer/test_lmdb 1 500 500
+./build/tools/convert_imageset data/caffe4facer/training_dataset/ data/caffe4facer/training_dataset/train_files.txt  data/caffe4facer/train_lmdb 1 28 28
+./build/tools/convert_imageset data/caffe4facer/test_dataset/ data/caffe4facer/test_dataset/test_files.txt data/caffe4facer/test_lmdb 1 28 28
+exit
+exit
+cd work/
+cd caffe4facer/
+git commit -a
+git add .
+git add -A
+git commit -a
+git push
+exit
+cd caffe/
+build/tools/caffe train -solver data/caffe4facer/caffe4facer_solver.prototxt 
+build/tools/caffe train -solver data/caffe4facer/caffe4facer_solver.prototxt 
+build/tools/caffe train -solver data/caffe4facer/caffe4facer_solver.prototxt 
+build/tools/caffe train -solver data/caffe4facer/caffe4facer_solver.prototxt 
+vi data/caffe4facer/train_lenet.sh 
+./data/caffe4facer/train_lenet.sh 
+cat ./examples/mnist/create_mnist.sh 
+build/tools/caffe train -solver data/caffe4facer/caffe4facer_solver.prototxt 
+build/tools/caffe train -solver data/caffe4facer/lenet_solver.prototxt 
+vi data/caffe4facer/train_lenet.sh 
+ll
+ll data/caffe4facer/
+./data/caffe4facer/train_lenet.sh 
+./data/caffe4facer/train_lenet.sh 
+./data/caffe4facer/train_lenet.sh 
+./data/caffe4facer/train_lenet.sh 
+./data/caffe4facer/train_lenet.sh 
+./data/caffe4facer/train_lenet.sh 
+./data/caffe4facer/train_lenet.sh 
+./data/caffe4facer/train_lenet.sh 
+./data/caffe4facer/train_lenet.sh 
+./build/tools/caffe train -solver ./data/caffe4facer/solver.prototxt 
+./build/tools/caffe train -solver ./data/caffe4facer/solver.prototxt 
+./build/tools/caffe train -solver ./data/caffe4facer/solver.prototxt 
+./build/tools/caffe train -solver ./data/caffe4facer/solver.prototxt 
+./build/tools/caffe train -solver ./data/caffe4facer/solver.prototxt 
+./build/tools/caffe train -solver ./data/caffe4facer/solver.prototxt 
+./build/tools/caffe train -solver ./data/caffe4facer/solver.prototxt 
+./build/tools/caffe train -solver ./data/caffe4facer/solver.prototxt 
+./build/tools/caffe train -solver ./data/caffe4facer/solver.prototxt 
+./build/tools/caffe train -solver ./data/caffe4facer/solver.prototxt 
+./build/tools/caffe train -solver ./data/caffe4facer/solver.prototxt 
+ll
+vi ./data/caffe4facer/solver.prototxt 
+vi ./data/caffe4facer/solver.prototxt 
+vi ./data/caffe4facer/train_val.prototxt 
+vi ./data/caffe4facer/solver.prototxt 
+./build/tools/caffe train -solver ./data/caffe4facer/solver.prototxt 
+vi ./data/caffe4facer/train_val.prototxt 
+vi ./data/caffe4facer/train_val.prototxt 
+./build/tools/caffe train -solver ./data/caffe4facer/solver.prototxt 
+exit
+cd work/
+cd caffe4facer/
+ll
+git add .
+git commit -a
+git push
+ls
+cd ~/caffe/examples/
+ll
+cd mnist/
+ll
+cd ../../
+cd models/
+ll
+cd bvlc_reference_caffenet/
+ll
+cd ~/caffe/data/ilsvrc12/
+ll
+./get_ilsvrc_aux.sh 
+ll
+cd ../../
+find ./ -name *.prototxt
+cp models/bvlc_reference_caffenet/deploy.prototxt ./data/caffe4facer/
+vi ./data/caffe4facer/deploy.prototxt 
+vi ./data/caffe4facer/deploy.prototxt 
+vi ./data/caffe4facer/deploy.prototxt 
+ll ./data/caffe4facer/
+exit
