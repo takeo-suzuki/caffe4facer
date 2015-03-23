@@ -60,20 +60,26 @@ def reverseLR(f):
     return im
 
 def resizeHalf(f):
-    return resize(f,0.5)
+    return resizeByScale(f,0.5)
 
 def resizeQuarter(f):
-    return resize(f,0.25)
+    return resizeByScale(f,0.25)
 
 def resizeEighth(f):
-    return resize(f,0.125)
+    return resizeByScale(f,0.125)
 
-def resize(f,scale):
+def resizeByScale(f,scale):
     image_path = f
     image = cv2.imread(image_path)
     hight = image.shape[0]
     width = image.shape[1]
     im = cv2.resize(image,(int(width*scale),int(hight*scale)))
+    return im
+
+def resize(f,pix):
+    image_path = f
+    image = cv2.imread(image_path)
+    im = cv2.resize(image,(pix,pix))
     return im
 
 def gray(f):
