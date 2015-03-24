@@ -2,8 +2,8 @@ name: "CaffeNet"
 input: "data"
 input_dim: 10
 input_dim: 3
-input_dim: 256
-input_dim: 256
+input_dim: 227
+input_dim: 227
 layer {
   name: "conv1"
   type: "Convolution"
@@ -153,7 +153,7 @@ layer {
   bottom: "pool5"
   top: "fc6"
   inner_product_param {
-    num_output: 4096
+    num_output: 5
   }
 }
 layer {
@@ -201,7 +201,7 @@ layer {
   bottom: "fc7"
   top: "fc8"
   inner_product_param {
-    num_output: 5
+    num_output: 1000
   }
 }
 layer {

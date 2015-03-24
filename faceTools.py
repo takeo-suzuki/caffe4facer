@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-import cv2
 import numpy as np
+import cv2
 
 #HAAR分類器の顔検出用の特徴量
 #cascade_path = "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml"
@@ -28,7 +28,7 @@ def face_detect(f):
     #flags – このパラメータは，新しいカスケードでは利用されません．古いカスケードに対しては，cvHaarDetectObjects 関数の場合と同じ意味を持ちます
     #minSize – 物体が取り得る最小サイズ．これよりも小さい物体は無視されます
     #facerect = cascade.detectMultiScale(image_gray, scaleFactor=1.1, minNeighbors=1, minSize=(1, 1))
-    facerect = cascade.detectMultiScale(image_gray, scaleFactor=1.1, minNeighbors=3, minSize=(10, 10), flags = cv2.cv.CV_HAAR_SCALE_IMAGE)
+    facerect = cascade.detectMultiScale(image_gray, scaleFactor=1.1, minNeighbors=3, minSize=(5, 5), flags = cv2.cv.CV_HAAR_SCALE_IMAGE)
     if len(facerect) > 0:
         #検出した顔を囲む矩形の作成
         for rect in facerect:

@@ -1,9 +1,10 @@
 #!/usr/bin/python
 # coding: UTF-8
 
+import numpy as np
 import cv2, faceTools
 
-f = open('files.txt')
+f = open('train_files_org.txt')
 lines = f.readlines() # 1行毎にファイル終端まで全て読む(改行文字も含まれる)
 f.close()
 # lines: リスト。要素は1行の文字列データ
@@ -26,7 +27,7 @@ for line in lines:
     cv2.imwrite(fileName_f + fileNameExt,image_f)
     
     fileName_s = fileName_f + 's'
-    image_s = faceTools.resize(fileName_f + fileNameExt)
+    image_s = faceTools.resize(fileName_f + fileNameExt,256)
     cv2.imwrite(fileName_s + fileNameExt,image_s)
     
     imageFiles.append(fileName_s)
@@ -78,11 +79,11 @@ for line in lines:
     
     # blurS
     blurList = []
-    for fn in list(imageFiles):
-        fileName_bs = fn + 'b'
-        image_bs = faceTools.blurS(fn + fileNameExt)
-        cv2.imwrite(fileName_bs + fileNameExt,image_bs)
-        blurList.append(fileName_bs)
+    #for fn in list(imageFiles):
+    #    fileName_bs = fn + 'b'
+    #    image_bs = faceTools.blurS(fn + fileNameExt)
+    #    cv2.imwrite(fileName_bs + fileNameExt,image_bs)
+    #    blurList.append(fileName_bs)
 
     # blurM
     for fn in list(imageFiles):
@@ -92,11 +93,11 @@ for line in lines:
         blurList.append(fileName_bm)
 
     # blurL
-    for fn in list(imageFiles):
-        fileName_bl = fn + 'l'
-        image_bl = faceTools.blurL(fn + fileNameExt)
-        cv2.imwrite(fileName_bl + fileNameExt,image_bl)
-        blurList.append(fileName_bl)
+    #for fn in list(imageFiles):
+    #    fileName_bl = fn + 'l'
+    #    image_bl = faceTools.blurL(fn + fileNameExt)
+    #    cv2.imwrite(fileName_bl + fileNameExt,image_bl)
+    #    blurList.append(fileName_bl)
 
     imageFiles.extend(blurList)
 

@@ -1,0 +1,91 @@
+name: "LogisticRegressionNet"
+layer {
+  name: "data"
+  type: "Data"
+  top: "data"
+  top: "label"
+  include {
+    phase: TRAIN
+  }
+  data_param {
+    source: "data/caffe4facer/train_lmdb"
+    batch_size: 100
+    backend: LMDB
+  }
+  memory_data_param {
+    batch_size: 100
+    channels: 3
+    height: 1 
+    width: 1
+  }
+  transform_param {
+    crop_size: 1
+    mirror: false
+  }
+}
+layer {
+  name: "data"
+  type: "Data"
+  top: "data"
+  top: "label"
+  include {
+    phase: TEST
+  }
+  data_param {
+    source: "data/caffe4facer/test_lmdb"
+    batch_size: 100
+    backend: LMDB
+  }
+  memory_data_param {
+    batch_size: 100
+    channels: 3
+    height: 1
+    width: 1
+  }
+  transform_param {
+    crop_size: 1
+    mirror: false
+  }
+}
+layer {
+  name: "fc1"
+  type: "InnerProduct"
+  bottom: "data"
+  top: "fc1"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  inner_product_param {
+    num_output: 2
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  name: "loss"
+  type: "SoftmaxWithLoss"
+  bottom: "fc1"
+  bottom: "label"
+  top: "loss"
+}
+layer {
+  name: "accuracy"
+  type: "Accuracy"
+  bottom: "fc1"
+  bottom: "label"
+  top: "accuracy"
+  include {
+    phase: TEST
+  }
+}

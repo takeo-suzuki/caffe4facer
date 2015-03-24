@@ -1,0 +1,3 @@
+train_dataset/yamamoto.jpg 0
+train_dataset/oishi.jpg 1
+train_dataset/murayama.jpg 2

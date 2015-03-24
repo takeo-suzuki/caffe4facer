@@ -52,3 +52,10 @@ docs/_build/
 
 # PyBuilder
 target/
+
+#caffe train and test datas
+train_dataset/
+test_dataset/
+train_lmdb/
+test_lmdb/
+
