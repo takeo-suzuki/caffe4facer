@@ -21,7 +21,7 @@ layer {
 #  }
   data_param {
     source: "../../work/caffe4facer/train_lmdb"
-    batch_size: 256
+    batch_size: 30
     backend: LMDB
   }
 }
@@ -47,7 +47,7 @@ layer {
 #  }
   data_param {
     source: "../../work/caffe4facer/test_lmdb"
-    batch_size: 50
+    batch_size: 30
     backend: LMDB
   }
 }
@@ -368,7 +368,7 @@ layer {
     decay_mult: 0
   }
   inner_product_param {
-    num_output: 5
+    num_output: 3
     weight_filler {
       type: "gaussian"
       std: 0.01
