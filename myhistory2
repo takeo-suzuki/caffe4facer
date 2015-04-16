@@ -1,0 +1,405 @@
+gedit
+sudo apt-get update
+wget -q http://packages.linuxmint-jp.net/linuxmint-ja-archive-keyring.gpg -O- | sudo apt-key add -
+sudo wget http://packages.linuxmint-jp.net/sources.list.d/linuxmint-ja.list -O /etc/apt/sources.list.d/linuxmint-ja.list
+sudo apt-get update
+sudo apt-get dist-upgrade
+shutdown -r now
+sudo shutdown -r now
+ll
+chmod +x cuda_7.0.28_linux.run 
+chmod +x NVIDIA-Linux-x86_64-346.47.run 
+ll
+shutdow -r now
+sudo shutdown -r now
+sudo /etc/init.d/mdm status
+sudo /etc/init.d/mdm stop
+exit
+gcc --version
+sudo apt-get install build-essential
+sudo ./cuda_7.0.28_linux.run 
+stopx
+exit
+sudo /etc/init.d/mdm status
+w
+ps ax | grep bash
+sudo kill -9 27687
+w
+ps ax | grep cinnamon
+ps ax | grep tty8
+sudo kill -9 26999
+w
+sudo /etc/init.d/mdm stop
+sudo /etc/init.d/mdm status
+ll
+sudo ./cuda_7.0.28_linux.run -driver
+sudo ./cuda_7.0.28_linux.run -silent -driver
+less /tmp/cuda_install_28803.log 
+sudo ./cuda_7.0.28_linux.run
+sudo ./cuda_7.0.28_linux.run
+sudo ./cuda_7.0.28_linux.run
+less /var/log/nvidia-installer.log 
+sudo /etc/init.d/mdm status
+stopx
+sudo stopx
+startx
+sudo /etc/init.d/mdm status
+sudo ./cuda_7.0.28_linux.run 
+exit
+shutdown -r now
+sudo shutdown -r now
+printenv
+printenv | grep CUDA
+cd opencv-2.4.10/
+cd cmake/
+grep 11
+grep "11" *.cmake
+grep "ARCH" *.cmake
+sudo apt-get install blas
+sudo apt-get install openblas
+sudo apt serch blas
+sudo apt search blas
+sudo apt-get install libopenblas-dev
+cd /usr/lib/
+ll
+ls -l libGL.so
+ls -l libGL.so.1
+cd x86_64-linux-gnu/
+ls -l libGL.so
+ls -l mesa/libGL.so
+sudo ln -sf /usr/lib/libGL.so.1 /usr/lib/x86_64-linux-gnu/libGL.so
+ls -l libGL.so
+cd ../
+ls -l libGL
+ls -l libGL.so
+ls -l libGL.so.1
+ls -l ./x86_64-linux-gnu/libGL.so.1
+exit
+mkdir work
+sudo apt-get install git
+cd work/
+git clone https://github.com/takeo-suzuki/caffe4facer.git
+ll
+cd caffe4facer/
+sudo apt-get install eclipse-cdt
+cd ~/
+unzip NotoSansCJKJP-hinted.zip 
+sudo mv *.otf /usr/local/share/fonts/
+sudo apt-get install vim
+sudo apt-get purge nano
+./work/caffe4facer/opencv.sh 
+ll
+cd opencv-2.4.10/
+ll
+cd build/
+ll
+cd ../
+ll
+cat CMakeLists.txt | less
+cat CMakeLists.txt | grep cuda
+cat CMakeLists.txt | grep CUDA
+cd op
+cd build/
+cmake  -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D WITH_V4L=ON -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D WITH_VTK=ON -D WITH_CUDA=ON -D CUDA_ARCH_BIN="2.0 3.0 3.5" ..
+make
+cmake -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D WITH_V4L=ON -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D WITH_VTK=ON -D WITH_CUDA=ON -D CUDA_ARCH_BIN="2.0 3.0 3.5" ..
+make
+make clean
+make
+dpkg-query -S /usr/lib/x86_64-linux-gnu/libGL.so
+sudo ldconfig -v|grep GL 
+ll /usr/lib/ | grep GL
+cmake  -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D WITH_V4L=ON -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D WITH_VTK=ON -D WITH_CUDA=ON -D CUDA_ARCH_BIN="2.0 3.0 3.5" ..
+make clean
+make
+make
+ll
+make clean
+cmake -i -D CMAKE_BUILD_TYPE=RELEASE ../
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
+make
+make install
+sudo make install
+sudo apt-get install node
+npm
+sudo apt-get install npm
+sudo apt-get install bower
+npm install -g bower
+sudo npm install -g bower
+cd ../../
+ll
+cd work/
+git clone http://192.168.0.116/git/tf_sp_cupondemo
+ll
+cd tf_sp_cupondemo/
+bower install jquery
+ll
+bower install bootstrap
+bower 
+bower --help
+exit
+bower
+sudo npm install -g bower
+bower
+where bower
+gwhere bower
+/usr/local/bin/
+cd /usr/local/bin/ 
+ll
+cd ../lib/node_modules/
+ll
+cd bower/
+ll
+cd bin/
+ll
+./bower 
+cd ../
+ll
+cd node_modules/
+ll
+cd ../
+ll
+cd lib/
+ll
+cd core
+ll
+cd ../
+cd ~
+bower -v
+node -v
+npm -v
+sudo apt-get purge node
+sudo apt-get autoremove node
+sudo apt-get install nodejs
+node -v
+sudo apt-get reinstall nodejs
+sudo apt-get remove nodejs
+sudo apt-get install nodejs
+node -v
+sudo apt-get install npm
+npm -v
+node -v
+sudo apt-get install nodejs
+sudo apt-get purge nodejs
+sudo apt-get install nodejs
+node
+nodejs
+nodejs -v
+npm
+sudo apt-get install npm
+npm -v
+npm install bower
+bower -v
+node
+ll
+npm install -g bower
+sudo npm install -g bower
+node
+cd /usr/bin/
+ll
+ll | grep node
+sudo ln -s nodejs node
+ll | grep node
+cd ~
+npm install -g bower
+sudo npm install -g bower
+bower -v
+cd work/
+cd tf_sp_cupondemo/
+ll
+bower install jquery
+ll
+bower install bootstrap
+ll
+cd bower_components/
+ll
+exit
+cd work/
+ll
+cd tf_sp_cupondemo/
+git add .
+git commit -a
+git config --global user.email "takeo_suzuki@kronos-jp.net"
+git commit -a
+git push
+bower install fontawesome
+git add .
+git commit -a
+git push
+bower install bootstrap-datepicker
+bower install bootstrap-datepicker
+ll
+cd bower_components/
+ll
+cd ../
+git add .
+git commit -a
+git push
+sudo gedit /etc/ld.so.conf.d/opencv.conf
+sudo ldconfig
+sudo vi /etc/bash.bashrc 
+sudo vi /etc/bash.bashrc 
+sudo shutdown -r now
+cd opencv-2.4.10/samples/c
+ll
+ll | grep sh
+./build_all.sh 
+cd ../
+cd ../
+ll
+rm -rf build/
+ll
+mkdir build
+cd build/
+ll
+cmake -i ..
+make
+cmake  -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D WITH_V4L=ON -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D WITH_CUDA=ON -D CUDA_ARCH_BIN="2.0 3.0 3.5" ..
+make
+make clean
+cmake  -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local  ..
+cd ../
+rm -rf ./build/
+mkdir build
+cd build
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local  ..
+make
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D CUDA_ARCH_BIN="2.0 3.0 3.5" ..
+make
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D CUDA_ARCH_BIN="2.0 3.0 3.5" ..
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D BUILD_NEW_PYTHON_SUPPORT=ON -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D WITH_CUDA=ON -D CUDA_ARCH_BIN="2.0 3.0 3.5" ..
+make
+sudo shutdoen -h now
+sudo shutdown -h now
+sudo apt-get install sshd
+sudo apt-get install ssh
+sudo apt-get install ntp
+sudo vi /etc/ntp.conf 
+sudo /etc/init.d/ntp stop
+sud
+sudo /etc/init.d/ntp start
+ls /etc/ssh
+ls /etc/ssh/sshd_config 
+sudo vi /etc/ssh/sshd_config 
+sudo /etc/init.d/ssh status
+sudo service ssh status
+ipconfig
+ifcontig
+ifconfig
+exit
+ll
+exit
+sudo apt-get install resolvconf
+sudo vi /etc/network/interfaces
+sudo vi /etc/resolv.conf 
+exit
+sudu apt-get install x11vnc
+sudo apt-get install x11vnc
+sudo x11vnc -storepasswd /etc/x11vnc.passwd
+sudo vi /etc/mdm/Init/Default 
+sudo ahutdown -r now
+sudo shutdown -r now
+sudo vi /etc/network/interfaces
+sudo ifstop eth0
+ifconfig restart
+ifconfig eth0
+ifconfig
+sudo network restart
+sudo /etc/init.d/networking restart
+ifconfig
+sudo vi /etc/network/interfaces
+shutdown -r now
+sudo shutdown -r now
+ifconfig
+sudo vi /etc/network/interfaces
+sudo vi /etc/network/interfaces
+exit
+sudo ifconfig
+sudo vi /etc/resolv.conf 
+sudo ifconfig
+sudo vi /etc/ssh/sshd_config 
+
+sudo service ssh status
+iptables
+iptables --help
+iptables --list
+sudo iptables --list
+ping 192.168.1.31
+sudo vi /etc/resolv.conf 
+sudo vi /etc/network/interfaces
+sudo ifconfig eth0 up
+sudo ifconfig eth0 down
+sudo ifconfig eth0 up
+sudo ifconfig eth0
+sudo vi /etc/network/interfaces
+sudo ifconfig eth0 down
+sudo ifconfig eth0 up
+sudo ifconfig eth0
+sudo vi /etc/network/interfaces
+sudo /etc/init.d/networking status
+sudo /etc/init.d/networking reload
+sudo ifconfig eth0
+sudo ifdown etho0
+sudo ifdown eth0
+sudo ifup eth0
+sudo ifconfig eth0
+sudo ifdown eth0
+sudo vi /etc/network/interfaces
+sudo ifup eth0
+exit
+exit
+ll
+cd opencv-2.4.10/
+cd build/
+make
+sudo make install
+cd  ../
+ll
+cd samples/
+ll
+cd c
+ll
+./build_all.sh 
+ll
+cd ../
+cd python
+ll
+./edge.py 
+python
+cd ../
+cd ../
+cd build/
+make clean
+sudo vi /etc/ld.so.conf.d/opencv.conf 
+sudo ldconfig
+sudo vi /etc/bash.bashrc 
+cd ../samples/c
+ll
+./build_all.sh 
+exit
+ll
+cd ./ダウンロード/
+ll
+cd ../
+ln --help
+ln -sn Download ダウンロード
+ll
+ln -s Download ダウンロード
+ll | grep D
+ln -s ダウンロード Download
+ll
+rm -rf opencv-2.4.10/
+sudo rm -rf opencv-2.4.10/
+ll
+unzip ./Download/opencv-2.4.10.zip ./
+unzip ./Download/opencv-2.4.10.zip
+ll
+cd opencv-2.4.10/
+ll
+mkdir build
+cd build
+ll
+sudo apt search opencv
+sudo apt-get install libopencv
+sudo apt-get install libopencv-dev
+exit
