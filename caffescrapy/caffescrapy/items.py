@@ -11,7 +11,5 @@ import scrapy
 class CaffescrapyItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    title = Field()
-    body = Field()
-    time = Field()
-    pass
+    image_urls = Field()
+    images = Field()

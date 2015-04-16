@@ -18,3 +18,6 @@ NEWSPIDER_MODULE = 'caffescrapy.spiders'
 
 DOWNLOAD_DELAY = 3
 ROBOTSTXT_OBEY = True
+
+ITEM_PIPELINES = {'scrapy.contrib.pipeline.images.ImagesPipeline': 1}
+IMAGES_STORE = './imagestore'
