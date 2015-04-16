@@ -5,7 +5,7 @@ from datetime import datetime
 from scrapy.contrib.spiders import SitemapSpider
 from scrapy.selector import Selector
 
-from helloscrapy.items import NewsItem
+from caffescrapy.items import CaffescrapyItem
 
 
 class ToyotaSpider(SitemapSpider):
